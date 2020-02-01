@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);/*set the contract*/
+    height: 100vh; /*set the height*/
+    background-size: cover; /* set the area of the image, and because we have set the height, the width will change auto*/
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute; /* by this way can't achieve rwd*/
+    width: 1140px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);/*move the box left and top*/
+}
+
+h1 {
+    margin: 0;
+}
+
