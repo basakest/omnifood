@@ -1,3 +1,10 @@
+/*
+the orange color #e67e22
+*/
+
+/* ------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------- */
 * {
     padding: 0;
     margin: 0;
@@ -13,26 +20,17 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+
+/* ------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------- */
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);/*set the contract*/
-    height: 100vh; /*set the height*/
-    background-size: cover; /* set the area of the image, and because we have set the height, the width will change auto*/
-    background-position: center;
-}
-
-.hero-text-box {
-    position: absolute; /* by this way can't achieve rwd*/
-    width: 1140px;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);/*move the box left and top*/
-}
-
+/*----- HEADINGS -----*/
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -44,6 +42,7 @@ h1 {
     text-transform: uppercase;
 }
 
+/*----- BUTTONS -----*/
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -84,3 +83,55 @@ h1 {
     color: #fff;
 }
 
+/* ------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------- */
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);/*set the contract*/
+    height: 100vh; /*set the height*/
+    background-size: cover; /* set the area of the image, and because we have set the height, the width will change auto*/
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute; /* by this way can't achieve rwd*/
+    width: 1140px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);/*move the box left and top*/
+}
+
+.logo {
+    float: left;
+    height: 100px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 55px;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 90%;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
