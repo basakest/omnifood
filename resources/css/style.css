@@ -188,6 +188,7 @@ header {
     height: 100vh; /*set the height*/
     background-size: cover; /* set the area of the image, and because we have set the height, the width will change auto*/
     background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -345,4 +346,46 @@ header {
 
 .city-feature {
     margin-bottom: 5px;
+}
+
+/* ------------------------------------------- */
+/* TESTIMONIALS */
+/* ------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+   
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    padding: 2%;
+    margin-top: 40px;
+    position: relative; /* put the relative here, not in section-testimonials*/
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    left: -3px;
+    top: -5px;
+}
+
+cite {
+    display: block;
+    margin-top: 25px;
+    font-size: 90%;
+}
+
+cite img {
+    width: 45px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
 }
