@@ -192,7 +192,7 @@ input[type=submit]:active {
 /* ------------------------------------------- */
 
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);/*set the contract*/
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);/*set the contract*/
     height: 100vh; /*set the height*/
     background-size: cover; /* set the area of the image, and because we have set the height, the width will change auto*/
     background-position: center;
@@ -414,7 +414,7 @@ header {
 /* ------------------------------------------- */
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
